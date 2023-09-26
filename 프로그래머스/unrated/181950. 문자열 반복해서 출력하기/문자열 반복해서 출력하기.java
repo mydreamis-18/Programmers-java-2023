@@ -6,11 +6,15 @@ public class Solution {
         String str = sc.next();
         int n = sc.nextInt();
         
-        // str과 n를 왜 못 곱해?
+        // ㅜ str과 n를 왜 못 곱해?
         // System.out.print(str * n);
         
-        for (int i = 0; i < n; i++) {
-            System.out.print(str);
-        }
+        // ㅜ 방법1
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(str);
+        // }
+        
+        // ㅜ 방법2
+        System.out.print(str.repeat(n));
     }
 }
