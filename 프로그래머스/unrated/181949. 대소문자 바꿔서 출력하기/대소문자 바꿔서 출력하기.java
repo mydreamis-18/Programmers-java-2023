@@ -6,7 +6,7 @@ public class Solution {
         String str = sc.next();
         
         // // ㅜ error: not a statement
-        // a[i];
+        // str[i];
         
         String result = new String();
         for (char 한글자 : str.toCharArray()) {
