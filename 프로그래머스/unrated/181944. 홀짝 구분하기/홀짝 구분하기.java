@@ -5,11 +5,15 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         
-        if (n % 2 == 1) {
-            System.out.print(n + " is odd");
-        }
-        else {
-            System.out.print(n + " is even");
-        }
+        // // ㅜ 방법1
+        // if (n % 2 == 1) {
+        //     System.out.print(n + " is odd");
+        // }
+        // else {
+        //     System.out.print(n + " is even");
+        // }
+        
+        // ㅜ 방법2
+        System.out.print(n + " is " + (n % 2 == 1 ? "odd" : "even"));
     }
 }
