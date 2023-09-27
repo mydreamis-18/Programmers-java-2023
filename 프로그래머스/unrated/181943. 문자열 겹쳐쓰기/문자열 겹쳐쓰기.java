@@ -8,19 +8,23 @@ class Solution {
         // // ㅜ error: incompatible types: int cannot be converted to String
         // my_string.length();
         
-        String answer = "";
+//         // ㅜ 방법1
+//         String answer = "";
         
-        for (int i = 0; i < my_string.length(); i++) {
+//         for (int i = 0; i < my_string.length(); i++) {
             
-            if (i >= s && i < s + overwrite_string.length()) {
-                answer += overwrite_string.charAt(i - s);
-            }
+//             if (i >= s && i < s + overwrite_string.length()) {
+//                 answer += overwrite_string.charAt(i - s);
+//             }
             
-            // if (i < s || i >= s + overwrite_string.length())
-            else {
-                answer += my_string.charAt(i);
-            }
-        }
-        return answer;
+//             // if (i < s || i >= s + overwrite_string.length())
+//             else {
+//                 answer += my_string.charAt(i);
+//             }
+//         }
+//         return answer;
+        
+        // ㅜ 방법2
+        return my_string.substring(0, s) + overwrite_string + my_string.substring(s + overwrite_string.length());
     }
 }
