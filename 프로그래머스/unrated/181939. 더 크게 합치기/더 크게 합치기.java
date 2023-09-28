@@ -10,8 +10,13 @@ class Solution {
         // // error: int cannot be dereferenced
         // a.toString();
 
-        int ab = calculation(a, b);
-        int ba = calculation(b, a);
+        // // ㅜ 방법1
+        // int ab = calculation(a, b);
+        // int ba = calculation(b, a);
+        
+        // ㅜ 방법2
+        int ab = Integer.parseInt("" + a + b);
+        int ba = Integer.parseInt("" + b + a);
         
         return ab >= ba ? ab : ba;
     }
