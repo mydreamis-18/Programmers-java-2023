@@ -19,6 +19,10 @@ class Solution {
         int calculationAb = calculation(a, b);
         int doubleAb = 2 * a * b;
         
-        return calculationAb >= doubleAb ? calculationAb : doubleAb;
+        // // ㅜ 방법2-1
+        // return calculationAb >= doubleAb ? calculationAb : doubleAb;
+        
+        // ㅜ 방법2-2
+        return Math.max(calculationAb, doubleAb);
     }
 }
