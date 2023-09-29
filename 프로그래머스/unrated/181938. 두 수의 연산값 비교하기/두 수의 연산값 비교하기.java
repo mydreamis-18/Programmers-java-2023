@@ -6,7 +6,11 @@ class Solution {
         // // error: incompatible types: possible lossy conversion from double to int
         // return a * Math.pow(10, Integer.toString(b).length()) + b;
         
-        return a * (int) Math.pow(10, Integer.toString(b).length()) + b;
+        // // ㅜ 방법1-1
+        // return a * (int) Math.pow(10, Integer.toString(b).length()) + b;
+        
+        // ㅜ 방법1-2
+        return a * (int) Math.pow(10, (int) Math.log10(b) + 1) + b;
     }
     
     public int solution(int a, int b) {
